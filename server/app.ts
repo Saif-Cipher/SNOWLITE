@@ -3,6 +3,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { randomBytes, createHash, timingSafeEqual } from 'node:crypto';
 import { mkdirSync, existsSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { products } from '../shared/catalog.ts';
 import { districtsByDivision, shippingForDistrict } from '../shared/locations.ts';
 
@@ -124,17 +125,22 @@ export function createApp(databasePath = '.data/snowlite.sqlite', demo = process
   });
   app.get('/api/auth/status', (_req, res) => res.json({ available: false, guestCheckout: true }));
   app.use('/api', (_req, res) => res.status(404).json({ error: 'API route not found.' }));
-  app.use((error: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
-    if (error instanceof InputError) return res.status(error.status).json({ error: error.message });
-    if (error instanceof SyntaxError) return res.status(400).json({ error: 'Invalid request body.' });
-    res.status(500).json({ error: 'The request could not be completed. Please try again.' });
-  });
-  const distPath = resolve('dist');
+  const rootDir = existsSync(resolve(process.cwd(), 'dist'))
+    ? process.cwd()
+    : typeof __dirname !== 'undefined'
+      ? resolve(__dirname, '..')
+      : process.cwd();
+  const distPath = resolve(rootDir, 'dist');
   if (existsSync(distPath)) {
     app.use(express.static(distPath));
     app.use((_req, res) => {
       res.sendFile(resolve(distPath, 'index.html'));
     });
   }
+  app.use((error: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+    if (error instanceof InputError) return res.status(error.status).json({ error: error.message });
+    if (error instanceof SyntaxError) return res.status(400).json({ error: 'Invalid request body.' });
+    res.status(500).json({ error: 'The request could not be completed. Please try again.' });
+  });
   return { app, db };
 }
