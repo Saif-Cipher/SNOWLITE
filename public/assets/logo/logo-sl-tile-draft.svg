@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Snowlite SL monogram">
+  <!-- Snowlite SL monogram: deep-freeze navy tile, white S flowing into ice-blue L -->
+  <rect x="8" y="8" width="224" height="224" rx="52" fill="#071A2E"/>
+  <!-- S : geometric, drawn as a bold path -->
+  <path d="M118 62c-26 0-44 14-44 34 0 16 10 25 29 30l21 5c10 3 14 6 14 12 0 8-8 13-19 13-12 0-20-6-22-16H72c2 24 20 38 47 38 27 0 45-14 45-35 0-17-10-26-30-31l-21-5c-9-2-13-6-13-11 0-7 7-12 18-12 11 0 18 5 20 14h24c-2-22-19-36-44-36z" fill="#F6F9FA"/>
+  <!-- L : ice blue, shares the S baseline -->
+  <path d="M158 62h26v92h44v24h-70V62z" fill="#8ED8F2"/>
+  <!-- snow dot -->
+  <circle cx="196" cy="52" r="7" fill="#F6F9FA"/>
+</svg>

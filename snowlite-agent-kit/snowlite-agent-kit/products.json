@@ -1,0 +1,31 @@
+{
+  "brand": "Snowlite",
+  "collection": "Winter '26 — Drop 01",
+  "sharedSpec": "480 GSM brushed fleece, relaxed cut, kangaroo pocket, ribbed cuffs and hem, small SL monogram embroidered on the left chest. Sizes S/M/L/XL.",
+  "designs": [
+    {"id": "design-01", "name": "Aubergine Geoband", "price": 149, "badge": "LIMITED", "image": "assets/designs/design-01-aubergine-geoband.webp", "description": "The signature. Deep aubergine cut with a geometric cloudy-and-cement band across the chest, striped hem and cuffs, SL in pale blue."},
+    {"id": "design-02", "name": "Glacier Snowflake", "price": 139, "badge": null, "image": "assets/designs/design-02-glacier-snowflake.webp", "description": "Snow white with one huge tonal snowflake blown across the chest and shoulders. Quiet from far away, detailed up close."},
+    {"id": "design-03", "name": "Midnight Slash", "price": 134, "badge": "BESTSELLER", "image": "assets/designs/design-03-midnight-slash.webp", "description": "Midnight navy slashed diagonally with ice blue and stone grey, the colour-block running straight through the pocket."},
+    {"id": "design-04", "name": "Pine Peaks", "price": 129, "badge": null, "image": "assets/designs/design-04-pine-peaks.webp", "description": "Deep pine green with a white line-art range of peaks and forest across the chest. For people who would rather be in the mountains."},
+    {"id": "design-05", "name": "Charcoal Circuit", "price": 124, "badge": null, "image": "assets/designs/design-05-charcoal-circuit.webp", "description": "Charcoal grey with twin cement-and-white racing stripes running shoulder to cuff. The sportiest cut in the drop."},
+    {"id": "design-06", "name": "Blush Fade", "price": 129, "badge": null, "image": "assets/designs/design-06-blush-fade.webp", "description": "A slow ombre melt from deep rose at the shoulders to near-white at the hem, like sunrise on fresh snow. SL stitched in deep aubergine."},
+    {"id": "design-07", "name": "Ember Sleeves", "price": 144, "badge": "LIMITED", "image": "assets/designs/design-07-ember-sleeves.webp", "description": "Matte black body, fire up both arms. Ember-orange flames climb from the cuffs and the hood is lined in burnt orange."},
+    {"id": "design-08", "name": "Aurora Speckle", "price": 134, "badge": "NEW", "image": "assets/designs/design-08-aurora-speckle.webp", "description": "Pale ice blue caught in a snow shower: an all-over speckle of white flakes woven through the whole garment. SL in deep aubergine."},
+    {"id": "design-09", "name": "Cream Retro Peaks", "price": 127, "badge": null, "image": "assets/designs/design-09-cream-retro-peaks.webp", "description": "Warm cream with a vintage-wash 70s sunset over layered peaks in rust, amber and olive. Old soul, new fleece."},
+    {"id": "design-10", "name": "Frost Camo", "price": 132, "badge": "NEW", "image": "assets/designs/design-10-frost-camo.webp", "description": "Camouflage rewritten for winter: ice crystals and frost ferns in white and silver over heather grey."},
+    {"id": "design-11", "name": "Cloudy Swirl", "price": 126, "badge": null, "image": "assets/designs/design-11-cloudy-swirl.webp", "description": "Cloudy blue and white swirled like a winter sky. The dye moves differently on every piece, so no two are exactly alike."},
+    {"id": "design-12", "name": "Cement Patchwork", "price": 138, "badge": null, "image": "assets/designs/design-12-cement-patchwork.webp", "description": "Hand-finished patchwork of cement greys, charcoal and stone with a single aubergine block down one side. SL in cloudy blue."}
+  ],
+  "heroProduct": {"name": "Aubergine Prime", "price": 149, "badge": "LIMITED", "image": "assets/hero/hero-aubergine-prime-card.webp", "description": "The hero piece. Plain deep aubergine, cloudy-blue SL embroidery, cut oversized."},
+  "colourways": [
+    {"name": "Glacier One", "price": 139, "badge": "LIMITED", "image": "assets/hero/hero-glacier-one.webp"},
+    {"name": "Midnight Freeze", "price": 129, "badge": "BESTSELLER", "image": "assets/colourways/product-midnight-freeze.png"},
+    {"name": "Frostbite Grey", "price": 119, "badge": null, "image": "assets/colourways/product-frostbite-grey.png"},
+    {"name": "Aurora", "price": 134, "badge": "NEW", "image": "assets/colourways/product-aurora.png"},
+    {"name": "Pine Cabin", "price": 124, "badge": null, "image": "assets/colourways/product-pine-cabin.png"},
+    {"name": "Charcoal Storm", "price": 119, "badge": null, "image": "assets/colourways/product-charcoal-storm.png"},
+    {"name": "Blush Avalanche", "price": 129, "badge": "NEW", "image": "assets/colourways/product-blush-avalanche.png"},
+    {"name": "Ember Night", "price": 144, "badge": "LIMITED", "image": "assets/colourways/product-ember-night.png"},
+    {"name": "Glacier Cream", "price": 124, "badge": null, "image": "assets/colourways/product-glacier-cream.png"}
+  ]
+}
