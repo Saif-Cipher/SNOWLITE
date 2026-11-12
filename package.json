@@ -1,1 +1,35 @@
-{"name":"snowlite","private":true,"version":"0.1.0","type":"module","scripts":{"dev":"vite --host 127.0.0.1","server":"tsx server/index.ts","build":"tsc --noEmit && vite build","test":"tsx --test tests/server*.test.ts","preview":"vite preview --host 127.0.0.1"},"dependencies":{"react":"^19.0.0","react-dom":"^19.0.0","react-router-dom":"^7.0.0","three":"^0.180.0","lucide-react":"^0.468.0","gsap":"^3.13.0","express":"^5.1.0"},"devDependencies":{"vite":"^7.0.0","typescript":"^5.9.0","tsx":"^4.20.0","@types/node":"^24.0.0","@types/react":"^19.0.0","@types/react-dom":"^19.0.0","@types/three":"^0.180.0","@types/express":"^5.0.0","@playwright/test":"^1.56.0"}}
+{
+  "name": "snowlite",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "server": "tsx server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "test": "tsx --test tests/*.test.ts",
+    "test:unit": "tsx --test tests/server*.test.ts",
+    "test:e2e": "tsx --test tests/e2e.test.ts",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.0",
+    "three": "^0.180.0",
+    "lucide-react": "^0.468.0",
+    "gsap": "^3.13.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0",
+    "typescript": "^5.9.0",
+    "tsx": "^4.20.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.180.0",
+    "@types/express": "^5.0.0",
+    "@playwright/test": "^1.56.0"
+  }
+}

@@ -1,8 +1,8 @@
 import express from 'express';
 import { DatabaseSync } from 'node:sqlite';
 import { randomBytes, createHash, timingSafeEqual } from 'node:crypto';
-import { mkdirSync } from 'node:fs';
-import { dirname } from 'node:path';
+import { mkdirSync, existsSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
 import { products } from '../shared/catalog.ts';
 import { districtsByDivision, shippingForDistrict } from '../shared/locations.ts';
 
@@ -129,5 +129,12 @@ export function createApp(databasePath = '.data/snowlite.sqlite', demo = process
     if (error instanceof SyntaxError) return res.status(400).json({ error: 'Invalid request body.' });
     res.status(500).json({ error: 'The request could not be completed. Please try again.' });
   });
+  const distPath = resolve('dist');
+  if (existsSync(distPath)) {
+    app.use(express.static(distPath));
+    app.use((_req, res) => {
+      res.sendFile(resolve(distPath, 'index.html'));
+    });
+  }
   return { app, db };
 }
